@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Chinese Handwriting Fonts */
+  .font-hand-chinese-brush {
+    font-family: 'Ma Shan Zheng', 'STKaiti', 'KaiTi', '楷体', cursive;
+  }
+  .font-hand-chinese-cursive {
+    font-family: 'Zhi Mang Xing', 'STKaiti', 'KaiTi', '楷体', cursive;
+  }
+  .font-hand-chinese-flowing {
+    font-family: 'Long Cang', 'STKaiti', 'KaiTi', '楷体', cursive;
+  }
+  .font-hand-chinese-kaiti {
+    font-family: 'STKaiti', 'KaiTi', '楷体', 'Songti SC', serif;
+  }
+
+  /* English Handwriting Fonts */
+  .font-hand-en-caveat {
+    font-family: 'Caveat', cursive;
+  }
+  .font-hand-en-kalam {
+    font-family: 'Kalam', cursive;
+  }
+  .font-hand-en-patrick {
+    font-family: 'Patrick Hand', cursive;
+  }
+  .font-hand-en-shadows {
+    font-family: 'Shadows Into Light', cursive;
+  }
+  .font-hand-en-architect {
+    font-family: 'Architects Daughter', cursive;
+  }
+
+  /* Paper Patterns */
+  .paper-pattern-grid {
+    background-size: 24px 24px;
+    background-image: 
+      linear-gradient(to right, rgba(148, 163, 184, 0.15) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  }
+
+  .paper-pattern-dots {
+    background-size: 22px 22px;
+    background-image: radial-gradient(circle, rgba(148, 163, 184, 0.35) 1.2px, transparent 1.2px);
+  }
+
+  .paper-pattern-lined {
+    background-size: 100% 32px;
+    background-image: linear-gradient(to bottom, transparent 31px, rgba(148, 163, 184, 0.22) 32px);
+  }
+
+  .paper-texture-kraft {
+    background-color: #e8d8be;
+    background-image: 
+      radial-gradient(ellipse at 15% 15%, rgba(255, 255, 255, 0.25) 0%, transparent 40%),
+      radial-gradient(ellipse at 85% 85%, rgba(0, 0, 0, 0.08) 0%, transparent 40%),
+      repeating-linear-gradient(45deg, rgba(0,0,0,0.012) 0px, rgba(0,0,0,0.012) 2px, transparent 2px, transparent 4px);
+  }
+
+  .paper-texture-ivory {
+    background-color: #faf7f0;
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 0%, transparent 80%),
+      radial-gradient(circle at 10% 90%, rgba(230, 220, 200, 0.25) 0%, transparent 50%);
+  }
+
+  .paper-texture-parchment {
+    background-color: #f4ecdc;
+    background-image: 
+      radial-gradient(ellipse at 50% 50%, rgba(255, 250, 240, 0.6) 0%, rgba(210, 190, 160, 0.3) 100%),
+      repeating-radial-gradient(circle at 20% 30%, rgba(0,0,0,0.015) 0, rgba(0,0,0,0.015) 3px, transparent 3px, transparent 6px);
+  }
+
+  .paper-texture-white-notebook {
+    background-color: #fbfbfd;
+  }
+
+  /* Washi Tape and Tape Stems */
+  .washi-tape-mask {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    clip-path: polygon(
+      0% 2px, 2% 0px, 4% 3px, 6% 0px, 8% 2px, 10% 0px, 12% 2px, 14% 0px, 16% 2px, 18% 0px, 20% 2px, 22% 0px, 24% 2px, 26% 0px, 28% 2px, 30% 0px, 32% 2px, 34% 0px, 36% 2px, 38% 0px, 40% 2px, 42% 0px, 44% 2px, 46% 0px, 48% 2px, 50% 0px, 52% 2px, 54% 0px, 56% 2px, 58% 0px, 60% 2px, 62% 0px, 64% 2px, 66% 0px, 68% 2px, 70% 0px, 72% 2px, 74% 0px, 76% 2px, 78% 0px, 80% 2px, 82% 0px, 84% 2px, 86% 0px, 88% 2px, 90% 0px, 92% 2px, 94% 0px, 96% 2px, 98% 0px, 100% 2px,
+      100% calc(100% - 2px), 98% 100%, 96% calc(100% - 3px), 94% 100%, 92% calc(100% - 2px), 90% 100%, 88% calc(100% - 2px), 86% 100%, 84% calc(100% - 2px), 82% 100%, 80% calc(100% - 2px), 78% 100%, 76% calc(100% - 2px), 74% 100%, 72% calc(100% - 2px), 70% 100%, 68% calc(100% - 2px), 66% 100%, 64% calc(100% - 2px), 62% 100%, 60% calc(100% - 2px), 58% 100%, 56% calc(100% - 2px), 54% 100%, 52% calc(100% - 2px), 50% 100%, 48% calc(100% - 2px), 46% 100%, 44% calc(100% - 2px), 42% 100%, 40% calc(100% - 2px), 38% 100%, 36% calc(100% - 2px), 34% 100%, 32% calc(100% - 2px), 30% 100%, 28% calc(100% - 2px), 26% 100%, 24% calc(100% - 2px), 22% 100%, 20% calc(100% - 2px), 18% 100%, 16% calc(100% - 2px), 14% 100%, 12% calc(100% - 2px), 10% 100%, 8% calc(100% - 2px), 6% 100%, 4% calc(100% - 2px), 2% 100%, 0% calc(100% - 2px)
+    );
+  }
+
+  /* Paper Realistic Elevation */
+  .paper-elevation {
+    box-shadow: 
+      0 1px 3px rgba(0, 0, 0, 0.08),
+      0 10px 25px -5px rgba(0, 0, 0, 0.2),
+      0 20px 48px -12px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Sticky Note Elevation */
+  .sticky-elevation {
+    box-shadow: 
+      1px 1px 2px rgba(0, 0, 0, 0.08),
+      3px 8px 16px -2px rgba(0, 0, 0, 0.16);
+  }
+}

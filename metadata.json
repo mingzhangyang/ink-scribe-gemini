@@ -1,0 +1,6 @@
+{
+  "name": "墨语手写笔记 · InkScribe",
+  "description": "智能将文本转化为仿真手写笔记，融合康奈尔与手账排版美学，支持字体纸张定制与手绘涂鸦插图。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
